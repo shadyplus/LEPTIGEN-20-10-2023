@@ -1,0 +1,1092 @@
+<!DOCTYPE html>
+<html lang="ru" data-lt-installed="true"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>فقدان الوزن مع الأخصائيين  </title>
+	<link rel="stylesheet" href="./KetoForm PRO_files/normalize.css">
+	<link rel="stylesheet" href="./KetoForm PRO_files/style.css">
+
+	<link href="./KetoForm PRO_files/css2" rel="stylesheet">
+	<link rel="stylesheet" href="./KetoForm PRO_files/pigs.css">
+
+	
+	<style>
+		.comments.hide__comments {
+			display: none;
+		}
+
+		.doctor {
+			margin-bottom: 0 !important;
+		}
+
+		.comments {
+			margin-top: 50px;
+			margin-bottom: 100px;
+		}
+
+		.comments * {
+			font-family: 'Georgia';
+			font-style: normal;
+			line-height: 140%;
+		}
+
+		.comments__button {
+			display: block;
+			max-width: 760px;
+			width: auto;
+			margin: 0 auto;
+			margin-bottom: 50px;
+
+			background: #FFFFFF;
+			border: 1px solid #1C468E;
+			border-radius: 10px;
+			padding: 48px 60px;
+			font-weight: 700;
+			font-size: 26px;
+			color: #000000;
+			cursor: pointer;
+			transition: all 0.5s;
+		}
+
+		.comments__button:hover,
+		.comments__button.active {
+			background: #2957A8;
+			color: #fff;
+		}
+
+		.comments__button--end {
+			margin-top: 50px;
+			margin-bottom: 0;
+			padding: 16px 46px;
+		}
+
+		.comments__wrap {
+			display: none;
+		}
+
+		.comments__wrap.show {
+			display: block;
+		}
+
+		.comments__list {
+			display: flex;
+			flex-direction: column;
+			gap: 40px;
+		}
+
+		.comments__item {}
+
+		.comments__header {
+			display: flex;
+			gap: 20px;
+			direction: rtl;
+
+		}
+
+		.comments__ava {
+			display: block;
+			width: 95px;
+			height: 95px;
+			border-radius: 50%;
+		}
+
+		.comments__header-wrap {}
+
+		.comments__name {
+			font-weight: 700;
+			font-size: 22px;
+			color: #2957A8;
+			margin-bottom: 5px;
+		}
+
+		.comments__city {
+			font-style: normal;
+			font-size: 18px;
+			color: #54565C;
+			margin-bottom: 14px;
+		}
+
+		.comments__reactions {
+			margin-bottom: 20px;
+			color: #808080;
+
+			display: flex;
+			align-items: center;
+			gap: 8px;
+		}
+
+		.comments__reactions-wrap {
+			display: flex;
+			align-items: center;
+			gap: 4px;
+		}
+
+		.comments__reactions-img {
+			display: block;
+			width: 14px;
+		}
+
+		.comments__reactions-count {
+			font-size: 14px;
+			line-height: 130%;
+			color: #828282;
+			font-family: 'Roboto', sans-serif;
+		}
+
+		.comments__text {
+			font-style: normal;
+			font-weight: 400;
+			font-size: 22px;
+			color: #2C2D2E;
+			padding-left: 115px;
+			position: relative;
+		}
+
+		.comments__text p {
+			padding: 0;
+			margin: 0;
+			direction: rtl;
+    text-align: right;
+		}
+
+		.comments__text p a {
+			color: #2957A8;
+			text-decoration: underline;
+			font-weight: bold;
+		}
+
+		.comments__image {
+			max-width: 350px;
+			width: 100%;
+			display: block;
+			margin-top: 30px;
+		}
+
+		.comments__subcomment-answer {
+			display: none;
+		}
+
+		.comments__subcomment .comments__subcomment-answer {
+			display: block;
+			margin-top: 15px;
+			font-size: 18px;
+			color: #808080;
+		}
+
+		.comments__subcomment {
+			padding-left: 115px;
+			margin-top: 40px;
+		}
+
+		.comments__subcomment .comments__text::after {
+			position: absolute;
+			content: '';
+			width: 1px;
+			height: 100%;
+			top: 0;
+			left: calc(95px / 2);
+			background: #808080;
+		}
+
+		@media screen and (max-width: 576px) {
+			.hide_on_mobile {
+				display: none;
+			}
+
+			.comments {
+				margin-bottom: 50px;
+			}
+
+			.comments__button {
+				font-size: 18px;
+				padding: 22px 40px;
+				margin-bottom: 30px;
+			}
+
+			.comments__button--end {
+				margin: 0 auto;
+				margin-top: 40px;
+				font-size: 24px;
+				line-height: 150%;
+				padding: 16px 45px;
+				background: #2957A8;
+				color: #fff;
+			}
+
+			.comments__header-wrap {
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				
+			}
+
+			.comments__name {
+				font-size: 18px;
+				margin-bottom: 10px;
+			}
+
+			.comments__text {
+				padding-left: 0;
+				margin-top: 20px;
+			}
+
+			.comments__reactions {
+				margin-bottom: 0;
+			}
+
+			.comments__subcomment {
+				padding-left: 0;
+				margin-top: 30px;
+			}
+
+			.comments__subcomment .comments__text {
+				padding-left: 15px;
+			}
+
+			.comments__subcomment .comments__text::after {
+				left: 0;
+			}
+		}
+	</style>
+
+	<style>
+        body *:not(i) {
+         font-family: Georgia, Times, 'Times New Roman', sans-serif !important;
+        }
+        p,
+        ul li,
+        ol li {
+            font-size: 22px !important;
+            line-height: 26px !important;
+        }
+    </style>
+
+
+
+<script src="./KetoForm PRO_files/jquery.min.js"></script>
+<link rel="stylesheet" href="./KetoForm PRO_files/intlTelInput.css">
+</head>
+
+<body>
+	<header class="header">
+		<div class="header__box">
+			<div class="container">
+				<div class="header__inner">
+					<a class="header__logo-link" href="#">
+						<img class="header__logo" src="./KetoForm PRO_files/logo.png" alt="logo">
+					</a>
+					<nav class="menu">
+						<div class="menu__burger-box">
+							<img class="burger__icon" src="./KetoForm PRO_files/search.svg" alt="search">
+							<button class="menu__burger">
+								<span class="menu__burger-line"></span>
+								<span class="menu__burger-line2"></span>
+							</button>
+						</div>
+						<ul class="menu__list">
+							<li class="menu__list-item">
+								<a class="menu__list-link" href="#">
+									أخبار
+								</a>
+							</li>
+							<li class="menu__list-item">
+								<a class="menu__list-link" href="#">
+									صحة
+								</a>
+							</li>
+							<li class="menu__list-item">
+								<a class="menu__list-link" href="#">
+									تفاصيل
+								</a>
+							</li>
+							<li class="menu__list-item">
+								<a class="menu__list-link" href="#">
+									منتجات
+								</a>
+							</li>
+							<li class="menu__list-item">
+								<a class="menu__list-link" href="#">
+									التواصل
+								</a>
+							</li>
+							<li class="menu__list-item">
+								<a class="menu__list-link" href="#">
+									<img class="menu__list-img" src="./KetoForm PRO_files/search.svg" alt="search">
+								</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section class="doctor">
+		<div class="container doctor__container">
+			<div class="doctor__inner">
+				<div class="doctor__top">
+					<img class="doctor__img" src="./KetoForm PRO_files/doctor.jpg" alt="doctor">
+					<div class="doctor__info">
+						<p style="text-align: right;direction: rtl;" class="doctor__info-textbold">مرحباً !</p>
+						<p style="text-align: right;direction: rtl;" class="doctor__info-text">
+							انا إسمي مليكة  و اليوم سوف أساعدك في تشخيص حالتك 
+						</p>
+						<p style="text-align: right;direction: rtl;" class="doctor__info-text">
+							بخصوص التخسيس و فقدات الوزن و إذا كانت لديك مشاكل صحية ناتجة عن الوزن الزائد .
+						</p>
+					</div>
+				</div>
+
+				<div class="question question-1 question--active">
+					<div class="question__inner">
+						<h3 class="question__title">
+							<span class="question__title-num">1</span>
+							<span class="question__title-text">
+								ما هو جنسك ؟ 
+							</span>
+						</h3>
+						<div class="question__buttons">
+							<button class="question__buttons-btn" data-gender="Мужской">ذكر</button>
+							<button class="question__buttons-btn" data-gender="Женский">انثى</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="question question-2">
+					<div class="question__inner">
+						<h3 class="question__title">
+							<span class="question__title-num">2</span>
+							<span class="question__title-text">
+								هل عمرك أكبر من 55 عاماً ؟
+							</span>
+						</h3>
+						<div class="question__buttons">
+							<button class="question__buttons-btn" data-age="Да">نعم</button>
+							<button class="question__buttons-btn" data-age="Нет">لا</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="question question-3">
+					<div class="question__inner">
+						<h3 class="question__title">
+							<span class="question__title-num">3</span>
+							<span class="question__title-text">
+								كم وزنك ؟
+							</span>
+						</h3>
+						<div class="question__buttons">
+							<button class="question__buttons-btn" data-weight="60">أقل من 60 كجم</button>
+							<button class="question__buttons-btn" data-weight="80">60-80 كجم</button>
+							<button class="question__buttons-btn" data-weight="100">80-100 كجم</button>
+							<button class="question__buttons-btn" data-weight="110">أكثر من 100 كجم </button>
+						</div>
+					</div>
+				</div>
+
+				<div class="question question-4">
+					<div class="question__inner">
+						<h3 class="question__title">
+							<span class="question__title-num">4</span>
+							<span class="question__title-text">
+								كم طولك ؟ 
+							</span>
+						</h3>
+						<div class="question__buttons">
+							<button class="question__buttons-btn" data-height="150">أقل من 150 سم</button>
+							<button class="question__buttons-btn" data-height="160">150 - 160 سم</button>
+							<button class="question__buttons-btn" data-height="170">160 - 170 سم</button>
+							<button class="question__buttons-btn" data-height="180">170 - 180 سم</button>
+							<button class="question__buttons-btn" data-height="190">180 - 190 سم</button>
+							<button class="question__buttons-btn" data-height="200">أطول من 190 سم</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="question question-5">
+					<div class="question__inner">
+						<h3 class="question__title">
+							<span class="question__title-num">5</span>
+							<span class="question__title-text">
+								كم من الوقت و انت تحاول التخلص من الوزن الزائد ؟ 
+							</span>
+						</h3>
+						<div class="question__buttons">
+							<button class="question__buttons-btn" data-long="1">أقل من سنة </button>
+							<button class="question__buttons-btn" data-long="2">من 1-2 سنة</button>
+							<button class="question__buttons-btn" data-long="5">من 2-5 سنوات</button>
+							<button class="question__buttons-btn" data-long="6">أكثر من 5 سنوات</button>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="question question-6">
+					<div class="question__inner">
+						<h3 class="question__title">
+							<span class="question__title-num">6</span>
+							<span class="question__title-text">
+								هل تتبع نظام غذائي معين ؟ 
+							</span>
+						</h3>
+						<div class="question__buttons">
+							<button class="question__buttons-btn" data-keep="Да">نعم. دائماً</button>
+							<button class="question__buttons-btn" data-keep="Только">فقط قبل المناسبات المهمة</button>
+							<button class="question__buttons-btn" data-keep="Когда">عندما يصل وزني إلى درجة لا استطيع تحملها </button>
+							<button class="question__buttons-btn" data-keep="Никогда">لا أبداً</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="question question-7">
+					<div class="question__inner">
+						<h3 class="question__title">
+							<span class="question__title-num">7</span>
+							<span class="question__title-text">
+								ما هو نظام حياتك اليومية ؟ 
+							</span>
+						</h3>
+						<div class="question__buttons">
+							<button class="question__buttons-btn" data-shape="Мало">أتحرك قليلاً و بالكاد أخرج من البيت</button>
+							<button class="question__buttons-btn" data-shape="Могу">نادراً ما امارس المشي حيتما أذهب لشراء الطعام</button>
+							<button class="question__buttons-btn" data-shape="Делаю">امارس التمارين صباحاً فقط </button>
+							<button class="question__buttons-btn" data-shape="Веду">نظام حياتي صحي امارس الرياضة المشي و الجري </button>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="question question-8">
+					<div class="question__inner">
+						<h3 class="question__title">
+							<span class="question__title-num">8</span>
+							<span class="question__title-text">
+								ما هو توقعك لإستخدام منتج لفقدان الوزن ؟ 
+							</span>
+						</h3>
+						<div class="question__buttons">
+							<button class="question__buttons-btn" data-wait="Сбросить"> فقدان الوزن بالفعل </button>
+							<button class="question__buttons-btn" data-wait="Избавиться">تقليل الشهية </button>
+							<button class="question__buttons-btn" data-wait="Исключить">تثبيت الوزن و عدم إكتساب وزن جديد </button>
+							<button class="question__buttons-btn" data-wait="Все">كل ما سبق </button>
+						</div>
+					</div>
+				</div>
+
+				<div class="question question-9">
+					<div class="question__inner">
+						<h3 class="question__title">
+							<span class="question__title-num">9</span>
+							<span class="question__title-text">
+								كيف حاربت وزنك الزائد سابقاً ؟ 
+							</span>
+						</h3>
+						<div class="question__buttons">
+							<button class="question__buttons-btn" data-deal="Были">كانت هناك أفكار لبدء فقدان الوزن، ولكن
+								لم تؤت ثمارها في الممارسة العملية</button>
+							<button class="question__buttons-btn" data-deal="Перепробовал">لقد جربت العديد من الأنظمة الغذائية و لكن لم تنفع معي </button>
+							<button class="question__buttons-btn" data-deal="Постоянно">مارست التمارين و شربت الكثير من المياه و لكن لم ينفع شيء</button>
+							<button class="question__buttons-btn" data-deal="Активно">ممارسة الرياضة و الإلتزام بنظام غذائي </button>
+						</div>
+					</div>
+				</div>
+
+				<div class="question question-10">
+					<div class="question__inner">
+						<h3 class="question__title">
+							<span class="question__title-num">10</span>
+							<span class="question__title-text">
+								هل ترغب في التخلص من الوزن الزائد والوصول إلى الشكل الذي تريده في أقل من شهر؟
+							</span>
+						</h3>
+						<div class="question__buttons">
+							<button class="question__buttons-btn" data-figuration="Да">نعم</button>
+							<button class="question__buttons-btn" data-figuration="Нет">لا</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="question question-final">
+					<div class="question__inner">
+						<h3 class="question-final__title">
+							<img class="question-final__img" src="./KetoForm PRO_files/vosklicatelni__znak.png" alt="vosklicatelni__znak">
+							<span class="final__title-text">
+								وفقا لنتائج الاستطلاع، تم إدراجك في قائمة الأشخاص الذين يحتاجون بشكل عاجل إلى المساعدة في التخلص من الوزن الزائد .
+							</span>
+						</h3>
+						<p dir="rtl" class="question-final__text">
+							بناءً على إجاباتك، قمت باختيار برنامج لك لإنقاص الوزن . 
+							
+							يتضمن هذا البرنامج استخدام منتج طبيعي و مبتكر إسمه <a href="#" style="color: red;">LEPTIGEN</a> تم تأكيد فعاليته من قبل الخبراء.
+						</p>
+
+						<p class="question-final__text">
+							بناءً على إجاباتك، فأنت في مرحلة زيادة الوزن، وهي قريبة جدًا من السمنة ويمكن أن تهدد بعواقب لا رجعة فيها مثل: تفاقم مشاكل القلب والأوعية الدموية، و مشاكل الجهاز التنفسي، واضطرابات النظام الهرموني، وتطور ارتفاع ضغط الدم الشرياني. الوزن الزائد يمكن أن يسبب مشاكل صحية كثيرة في  المرارة والكبد  ويؤثر سلبا على الجهاز العضلي الهيكلي.
+						</p>
+
+						<p dir="rtl" class="question-final__text">
+							إن طرق التخسيس  الكلاسيكية لمثل هذه المؤشرات ليست غير فعالة فحسب، بل قد تكون كذلك أيضًا سلبية و لها عواقب. أنا لا أنصح  بالطرق الكلاسيكية أبداً و لذلك أنصحك بالمكمل الغذائي <a href="#" style="color: red;">LEPTIGEN</a> .
+						</p>
+						<div style="text-align: center;">
+								<img style="max-width: 100%; width: 400px;" src="./KetoForm PRO_files/prod.png" alt="">
+						</div>
+						<p class="question-final__text">
+							إذا لم تتخذ إجراءً الآن، ففي الأشهر الستة المقبلة، ستواجه للأسف العواقب التي وصفتها أعلاه
+						</p>
+
+						<p class="question-final__text">
+							ولكن بما أنك قمت بزيارة بوابتنا اليوم ، والذي تعمل بالاشتراك مع العديد من الأخصائئيين في فقدان الوزن و مشاكل السمنة ، فسوف أحتفظ لك بمنتج  لإنقاص الوزن بسرعة وفعالية. قبل <b>
+								<script>d = new Date();
+p = new Date(d.getTime() + (86400 * 1000 * 0));
+monthA = '01,02,03,04,05,06,07,08,09,10,11,12'.split(',');
+document.write(p.getDate() + '.' + monthA[p.getMonth()] + '.' + p.getFullYear());
+</script>  سوف تتمكن من الحصول على هذا المنتج بتخفيض اليوم .
+							</b>
+						</p>
+
+						<h3 class="question-final__title question-final__subtitle">
+							<img class="question-final__img" src="./KetoForm PRO_files/vosklicatelni__znak.png" alt="vosklicatelni__znak">
+							<span style="direction: rtl;
+							text-align: right;" class="final__title-text">
+								كل ما عليك هو المشاركة في المسابقة في الأسفل عن طريق إختيار صورة من الصور الثلاثة و بعدها سوف تعرف كم هو التخفيض الذي ستحصل عليه عند حصولك على المنتج الذي سأنصحك به .
+							</span>
+						</h3>
+
+						<!--виджет-->
+						<center>
+							<span id="roulette"></span>
+							<center style="margin-bottom: 50px">
+								<div class="pigs_wrapper">
+									<h2 class="pigs_title" style="color: #ffffff!important">خمن في أي صورة منهم سوف يكون تخفيض <span class="price_land_discount">50</span>%</h2>
+									<div class="pigs_container">
+										<div class="pig">
+											<span class="pieces first"><img src="./KetoForm PRO_files/piece1.png"></span>
+											<span class="pieces second"><img src="./KetoForm PRO_files/piece2.png"></span>
+											<span class="pieces third"><img src="./KetoForm PRO_files/piece3.png"></span>
+											<span class="pieces fourth"><img src="./KetoForm PRO_files/piece4.png"></span>
+											<img src="https://2.waihorscanurotsvi.tk/landers/pohudenie---omni---ketoform-pro---besplatno---alisa---236---opros-svini---neo82---new---fb/index.php" class="pigs_disc">
+											<img class="pig_img" src="./KetoForm PRO_files/pig.png">
+										</div>
+										<div class="pig">
+											<span class="pieces first"><img src="./KetoForm PRO_files/piece1.png"></span>
+											<span class="pieces second"><img src="./KetoForm PRO_files/piece2.png"></span>
+											<span class="pieces third"><img src="./KetoForm PRO_files/piece3.png"></span>
+											<span class="pieces fourth"><img src="./KetoForm PRO_files/piece4.png"></span>
+											<img src="https://2.waihorscanurotsvi.tk/landers/pohudenie---omni---ketoform-pro---besplatno---alisa---236---opros-svini---neo82---new---fb/index.php" class="pigs_disc">
+											<img class="pig_img" src="./KetoForm PRO_files/pig.png">
+										</div>
+										<div class="pig">
+											<span class="pieces first"><img src="./KetoForm PRO_files/piece1.png"></span>
+											<span class="pieces second"><img src="./KetoForm PRO_files/piece2.png"></span>
+											<span class="pieces third"><img src="./KetoForm PRO_files/piece3.png"></span>
+											<span class="pieces fourth"><img src="./KetoForm PRO_files/piece4.png"></span>
+											<img src="https://2.waihorscanurotsvi.tk/landers/pohudenie---omni---ketoform-pro---besplatno---alisa---236---opros-svini---neo82---new---fb/index.php" class="pigs_disc">
+											<img class="pig_img" src="./KetoForm PRO_files/pig.png">
+										</div>
+									</div>
+								</div>
+
+								<div class="order_block">
+									<!-- <img style="width: 100%!important; max-width: 230px" src="prod.png" alt="img">
+									<h2>ВНИМАНИЕ! Остерегайтесь подделок!</h2>
+									<h3 id="here">Всё, что Вам нужно — это ввести имя и
+										номер телефона.<br>Поторопитесь! У Вас осталось
+										времени:<br>
+										<span class="time_remains" id="min">10</span>:<span class="time_remains" id="sec">00</span>
+									</h3> -->
+									<div class="order_block">
+										<div id="order_form" style="margin-top: 20px">
+											<link rel="stylesheet" href="./KetoForm PRO_files/styles.css" type="text/css">
+<!-- <link rel="stylesheet" href="css/roulette.css" type="text/css">
+											<div class="ruletka-p" id="roulette">
+            <h2>ВНИМАНИЕ! Остерегайтесь подделок!</h2>
+        <p>Товар в г. Москва и на территории Россия можно получить только <a href="#roulette" class="ruletka-a">приняв участие в розыгрыше скидки до 100%</a></p>
+    </div>
+
+<div class="spin-wrapper">
+            <p class="ruletka-p">Испытай удачу!<br>
+            Нажми на колесо! Попробуй получить скидку на Товар или вовсе забрать <span class="danger-text">даром со скидкой в 100%</span>!</p>
+        <div class="wheel-wrapper">
+        <div class="wheel">
+
+            <div class="wheel-img">
+                <img alt class="wheel-img__pic" src="images/wheel.png">
+                <div class="wheel-img__numbers">
+                    <div class="wheel-img__number">75</div>
+                    <div class="wheel-img__number">0</div>
+                    <div class="wheel-img__number">25</div>
+                    <div class="wheel-img__number">0</div>
+                    <div class="wheel-img__number">100</div>
+                    <div class="wheel-img__number">0</div>
+                    <div class="wheel-img__number">50</div>
+                    <div class="wheel-img__number">25</div>
+                </div>
+            </div>
+            <div class="wheel-cursor">
+                <img alt src="images/wheel-cursor.png">
+                                    <span class="cursor-text lt48" onclick="spin();">КРУТИ</span>
+                            </div>
+        </div>
+    </div>
+</div> -->
+
+<div class="order_block">
+    <div><img src="./KetoForm PRO_files/prod.png"></div>
+            <h3>كل ما عليك هو ملئ الخانات بالأسفل بإسمك و رقم هاتفك <br>
+				<h3 style="direction: rtl;">
+					سوف ينتهي التخفيض الخاص بك بعد :
+				</h3>
+			<span class="time_remains" id="min">10</span> : <span class="time_remains" id="sec">00</span></h3>
+
+    
+
+    <!----------------------- ВСТАВИТЬ ФОРМУ --------------------------->
+
+    <form id="order_form" action="https://2.waihorscanurotsvi.tk/landers/pohudenie---omni---ketoform-pro---besplatno---alisa---236---opros-svini---neo82---new---fb/land/success.php?pixel=" target="_blank" method="post">
+			<h1 style="direction: rtl;">
+				السعر قبل التخفيض : <span style="text-decoration: line-through;">11998</span> DZD
+			</h1>
+			<h1 style="direction: rtl; margin-bottom: 19px;">
+				السعر بعد التخفيض : 5999 DZD
+			</h1>
+			<p style="text-align: center; direction: rtl;">
+				عند شرائك دورة LEPTIGEN
+			</p>
+            <input type="text" class="input-roulette" name="fio" id="input-name" placeholder="أدخل إسمك هنا " minlength="2" maxlength="60" required="">
+			<br>
+            <input type="text" class="input-roulette" name="phone" id="input-name" style="direction: ltr; text-align: left;" placeholder="أدخل رقم هاتفك هنا " minlength="2" maxlength="60" required="">
+        
+		
+                        <input type="submit" class="submit-roulette" value="إتمام الطلب">
+						<br>
+						<p style="text-align: center;">
+							سوف يتم التواصل معك من قبل الشركة الموزعة للمنتج في الجزائر و لاتنسى ان <span style="color: red;">الدفع عن الإستلام</span>
+						</p>
+
+</form>
+
+    <!----------------------- ВСТАВИТЬ ФОРМУ --------------------------->
+
+</div>
+<div class="spin-result-wrapper">
+    <div class="pop-up-window">
+        <div class="close-popup"></div>
+		<h1 style="text-align: center; direction: rtl;">
+			تهانينا!
+		</h1>
+                                    <p class="ruletka-p pop-up-text">سوف تحصل على تخفيض  <span class="danger-text">50%!</span></p>
+                            <a class="pop-up-button" href="#">OK</a>
+    </div>
+</div>
+
+
+										</div>
+									</div>
+
+									
+								</div>
+							</center>
+						</center>
+						<!--виджет-->
+					</div>
+
+					<h1 style="text-align: right;
+					background: beige;
+					padding: 18px;
+					border-radius: 30px;
+					max-width: fit-content;
+					margin: auto;">
+						تعليقات المستخدمين لهذا المنتج 
+					</h1>
+					<div class="comments__list">
+						
+					
+						<div class="comments__item">
+						
+							<div class="comments__item">
+							<div class="comments__header">
+								<img class="comments__ava" src="./KetoForm PRO_files/ava1.jpg" alt="avatar">
+								<div class="comments__header-wrap">
+									<div class="comments__name">مدام مريم </div>
+									<div class="comments__city"></div>
+									<div class="comments__reactions">
+										<div class="comments__reactions-wrap">
+											<img class="comments__reactions-img" src="./KetoForm PRO_files/like.png" alt="likes">
+											<div class="comments__reactions-count">2</div>
+										</div>
+										<div class="comments__reactions-wrap">
+											<img class="comments__reactions-img" src="./KetoForm PRO_files/unlike.png" alt="unlikes">
+											<div class="comments__reactions-count">0</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="comments__text">
+								<p>إنه منتج جيد تمامًا. لقد جربته بالفعل , لقد فقدت وزني حقًا وقبل كل شيء أحافظ على صحتي.
+								</p>
+								<a class="comments__subcomment-answer" href="#">رد</a>
+								
+							</div>
+							
+						</div>
+					</div>
+					<div class="comments__item">
+						
+						<div class="comments__item">
+							<div class="comments__header">
+								<img class="comments__ava" src="./KetoForm PRO_files/ava2.jpg" alt="avatar">
+								<div class="comments__header-wrap">
+									<div class="comments__name">فاطمة</div>
+									<div class="comments__city"></div>
+									<div class="comments__reactions">
+										<div class="comments__reactions-wrap">
+											<img class="comments__reactions-img" src="./KetoForm PRO_files/like.png" alt="likes">
+											<div class="comments__reactions-count">5</div>
+										</div>
+										<div class="comments__reactions-wrap">
+											<img class="comments__reactions-img" src="./KetoForm PRO_files/unlike.png" alt="unlikes">
+											<div class="comments__reactions-count">0</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="comments__text">
+								<p>انظروا إلى نتائجي و كل هذا فقط في خلال عدة أسابيع ! أنا ممتنة جداً لمصنعي هذا المنتج !
+								</p>
+								<a class="comments__subcomment-answer" href="#">رد</a>
+								<img class="comments__image" src="./KetoForm PRO_files/d1 (1).jpg" alt="otz">
+							</div>
+							
+						</div>
+					</div>
+					<div class="comments__item">
+						
+						<div class="comments__item">
+							<div class="comments__header">
+								<img class="comments__ava" src="./KetoForm PRO_files/ava3.jpg" alt="avatar">
+								<div class="comments__header-wrap">
+									<div class="comments__name">مجيدة</div>
+									<div class="comments__city"></div>
+									<div class="comments__reactions">
+										<div class="comments__reactions-wrap">
+											<img class="comments__reactions-img" src="./KetoForm PRO_files/like.png" alt="likes">
+											<div class="comments__reactions-count">43</div>
+										</div>
+										<div class="comments__reactions-wrap">
+											<img class="comments__reactions-img" src="./KetoForm PRO_files/unlike.png" alt="unlikes">
+											<div class="comments__reactions-count">0</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="comments__text">
+								<p>أنا أضمن لكم انكم لا تحتاجون إلى نظام غذائي مع هذا المنتج المعجزة . أنا إستخدمته لوحده و كانت النتائج مذهلة .
+								</p>
+								<a class="comments__subcomment-answer" href="#">رد</a>
+								
+							</div>
+							
+						</div>
+					</div>
+					<div class="comments__item">
+						
+						<div class="comments__item">
+							<div class="comments__header">
+								<img class="comments__ava" src="./KetoForm PRO_files/ava7.jpg" alt="avatar">
+								<div class="comments__header-wrap">
+									<div class="comments__name">مجيدة</div>
+									<div class="comments__city"></div>
+									<div class="comments__reactions">
+										<div class="comments__reactions-wrap">
+											<img class="comments__reactions-img" src="./KetoForm PRO_files/like.png" alt="likes">
+											<div class="comments__reactions-count">0</div>
+										</div>
+										<div class="comments__reactions-wrap">
+											<img class="comments__reactions-img" src="./KetoForm PRO_files/unlike.png" alt="unlikes">
+											<div class="comments__reactions-count">0</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="comments__text">
+								<p>لقد أخذته لمدة شهر، بعض أصدقائي تناولوه لفترة أطول قليلاً. لكن النتائج كانت مرئية بالفعل بعد أيام من الاستخدام. إليكم صوري. خسيت بوضوح.
+								</p>
+								<a class="comments__subcomment-answer" href="#">رد</a>
+								<img class="comments__image" src="./KetoForm PRO_files/photo_2023-03-12_18-21-39 (2).jpg" alt="otz">
+
+							</div>
+							
+						</div>
+					</div>
+					<div class="comments__item">
+						
+						<div class="comments__item">
+							<div class="comments__header">
+								<img class="comments__ava" src="./KetoForm PRO_files/ava8.jpg" alt="avatar">
+								<div class="comments__header-wrap">
+									<div class="comments__name">حميدة</div>
+									<div class="comments__city"></div>
+									<div class="comments__reactions">
+										<div class="comments__reactions-wrap">
+											<img class="comments__reactions-img" src="./KetoForm PRO_files/like.png" alt="likes">
+											<div class="comments__reactions-count">1</div>
+										</div>
+										<div class="comments__reactions-wrap">
+											<img class="comments__reactions-img" src="./KetoForm PRO_files/unlike.png" alt="unlikes">
+											<div class="comments__reactions-count">0</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="comments__text">
+								<p>لقد جربته بنفسي و من الممتع انه مناسب للرجال و النساء أيضاً و كانت النتائج واضحة في خلال اسبوعين فقط من الإستخدام شكراً لكم
+								</p>
+								<a class="comments__subcomment-answer" href="#">رد</a>
+								
+							</div>
+							
+						</div>
+					</div>
+					<div class="comments__item">
+						
+						<div class="comments__item">
+							<div class="comments__header">
+								<img class="comments__ava" src="./KetoForm PRO_files/ava9.jpg" alt="avatar">
+								<div class="comments__header-wrap">
+									<div class="comments__name">لمياء</div>
+									<div class="comments__city"></div>
+									<div class="comments__reactions">
+										<div class="comments__reactions-wrap">
+											<img class="comments__reactions-img" src="./KetoForm PRO_files/like.png" alt="likes">
+											<div class="comments__reactions-count">13</div>
+										</div>
+										<div class="comments__reactions-wrap">
+											<img class="comments__reactions-img" src="./KetoForm PRO_files/unlike.png" alt="unlikes">
+											<div class="comments__reactions-count">0</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="comments__text">
+								<p>أنا مصدومة من نتائج الناس !! سوف أطلبه بالتأكيد الأن و ارجو توصيله لي في أقرب وقت ممكن !
+								</p>
+								<a class="comments__subcomment-answer" href="#">رد</a>
+								
+							</div>
+							
+						</div>
+					</div>
+					<div class="comments__item">
+						
+						<div class="comments__item">
+							<div class="comments__header">
+								<img class="comments__ava" src="./KetoForm PRO_files/ava10.jpg" alt="avatar">
+								<div class="comments__header-wrap">
+									<div class="comments__name">صفية</div>
+									<div class="comments__city"></div>
+									<div class="comments__reactions">
+										<div class="comments__reactions-wrap">
+											<img class="comments__reactions-img" src="./KetoForm PRO_files/like.png" alt="likes">
+											<div class="comments__reactions-count">36</div>
+										</div>
+										<div class="comments__reactions-wrap">
+											<img class="comments__reactions-img" src="./KetoForm PRO_files/unlike.png" alt="unlikes">
+											<div class="comments__reactions-count">0</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="comments__text">
+								<p>أنا لم  أكسب تخفيض 50% هل يمكنني إعادة المحاولة ؟ </p>
+								<a class="comments__subcomment-answer" href="#">رد</a>
+								
+							</div>
+							
+						</div>
+					</div>
+					<div class="comments__item">
+						
+						<div class="comments__item">
+							<div class="comments__header">
+								<img class="comments__ava" src="./KetoForm PRO_files/ava12.jpg" alt="avatar">
+								<div class="comments__header-wrap">
+									<div class="comments__name">نادية</div>
+									<div class="comments__city"></div>
+									<div class="comments__reactions">
+										<div class="comments__reactions-wrap">
+											<img class="comments__reactions-img" src="./KetoForm PRO_files/like.png" alt="likes">
+											<div class="comments__reactions-count">41</div>
+										</div>
+										<div class="comments__reactions-wrap">
+											<img class="comments__reactions-img" src="./KetoForm PRO_files/unlike.png" alt="unlikes">
+											<div class="comments__reactions-count">0</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="comments__text">
+								<p>لا أستطيع وصف مدى سعادتي بهذا التطور بفقدان وزني . انظروا و احكموا بأنفسكم
+								</p>
+								<a class="comments__subcomment-answer" href="#">رد</a>
+								
+							</div>
+							
+						</div>
+					</div>
+					<div class="comments__item">
+						
+						<div class="comments__item">
+							<div class="comments__header">
+								<img class="comments__ava" src="./KetoForm PRO_files/ava13.jpg" alt="avatar">
+								<div class="comments__header-wrap">
+									<div class="comments__name">محمد </div>
+									<div class="comments__city"></div>
+									<div class="comments__reactions">
+										<div class="comments__reactions-wrap">
+											<img class="comments__reactions-img" src="./KetoForm PRO_files/like.png" alt="likes">
+											<div class="comments__reactions-count">7</div>
+										</div>
+										<div class="comments__reactions-wrap">
+											<img class="comments__reactions-img" src="./KetoForm PRO_files/unlike.png" alt="unlikes">
+											<div class="comments__reactions-count">0</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="comments__text">
+								<p>أشكركم جداً لوجود هذا المنتج للرجال . لقد كان فعالاً جداً معي .</p>
+								<a class="comments__subcomment-answer" href="#">رد</a>
+								<img class="comments__image" src="./KetoForm PRO_files/otz13.jpg" alt="otz">
+							</div>
+							
+						</div>
+					</div>
+					
+					<div class="comments__item">
+						
+						<div class="comments__item">
+							<div class="comments__header">
+								<img class="comments__ava" src="./KetoForm PRO_files/ava14.jpg" alt="avatar">
+								<div class="comments__header-wrap">
+									<div class="comments__name">سناء</div>
+									<div class="comments__city"></div>
+									<div class="comments__reactions">
+										<div class="comments__reactions-wrap">
+											<img class="comments__reactions-img" src="./KetoForm PRO_files/like.png" alt="likes">
+											<div class="comments__reactions-count">23</div>
+										</div>
+										<div class="comments__reactions-wrap">
+											<img class="comments__reactions-img" src="./KetoForm PRO_files/unlike.png" alt="unlikes">
+											<div class="comments__reactions-count">0</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="comments__text">
+								<p>لقد أعجبني كثيراً LEPTIGEN لانه مكمل غذائي طبيعي 100% و أيضاً ان الدفع عند الإستلام فقط .</p>
+								<a class="comments__subcomment-answer" href="#">رد</a>
+								<img class="comments__image" src="./KetoForm PRO_files/otz14.jpg" alt="otz">
+							</div>
+							
+						</div>
+					</div>
+					<div class="comments__item">
+						
+						<div class="comments__item">
+							<div class="comments__header">
+								<img class="comments__ava" src="./KetoForm PRO_files/ava15.jpg" alt="avatar">
+								<div class="comments__header-wrap">
+									<div class="comments__name">محمود</div>
+									<div class="comments__city"></div>
+									<div class="comments__reactions">
+										<div class="comments__reactions-wrap">
+											<img class="comments__reactions-img" src="./KetoForm PRO_files/like.png" alt="likes">
+											<div class="comments__reactions-count">6</div>
+										</div>
+										<div class="comments__reactions-wrap">
+											<img class="comments__reactions-img" src="./KetoForm PRO_files/unlike.png" alt="unlikes">
+											<div class="comments__reactions-count">0</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="comments__text">
+								<p>لقد جربته انا و زوجتي و النتائج رائعة . سوف أطلب المزيد منه لطالما هناك تخفيض الأن !</p>
+								<a class="comments__subcomment-answer" href="#">رد</a>
+								
+							</div>
+							
+						</div>
+					</div>
+					<div class="comments__item">
+						
+						<div class="comments__item">
+							<div class="comments__header">
+								<img class="comments__ava" src="./KetoForm PRO_files/ava17.jpg" alt="avatar">
+								<div class="comments__header-wrap">
+									<div class="comments__name">تامر</div>
+									<div class="comments__city"></div>
+									<div class="comments__reactions">
+										<div class="comments__reactions-wrap">
+											<img class="comments__reactions-img" src="./KetoForm PRO_files/like.png" alt="likes">
+											<div class="comments__reactions-count">23</div>
+										</div>
+										<div class="comments__reactions-wrap">
+											<img class="comments__reactions-img" src="./KetoForm PRO_files/unlike.png" alt="unlikes">
+											<div class="comments__reactions-count">0</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="comments__text">
+								<p>لقد جربت هذا المنتج أيضًا! ليس لديكم فكرة، لقد فقدت عدة كيلوجرامات وأتباهى بذلك! ها هي نتائجي! الآن الكثير من أصدقائي يرغبون في طلب هذه الحبوب الحلوة لأنفسهم وعائلاتهم! لذلك، سوف أطلب حزم أكثر بالنسبة لي أيضا!
+								</p>
+								<a class="comments__subcomment-answer" href="#">رد</a>
+								<img class="comments__image" src="./KetoForm PRO_files/otz17.jpg" alt="otz">
+							</div>
+							
+						</div>
+					</div>
+					
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+
+	<footer class="footer">
+		<div class="footer__box">
+			<div class="container">
+				<div class="footer__inner">
+					<a class="footer__link" href="#">©
+						2023 LEPTIGEN
+					</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="./KetoForm PRO_files/main.js"></script>
+	<script src="./KetoForm PRO_files/button__animation.js"></script>
+	
+
+	<script src="./KetoForm PRO_files/pigs.js"></script>
+
+	
+<script src="./KetoForm PRO_files/script.js" type="text/javascript"></script>
+	
+
+
+
+   
+
+
+
+
+
+
+</body></html>
